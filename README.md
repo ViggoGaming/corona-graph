@@ -1,34 +1,36 @@
 # Corona graph 
 
 ### Description
-This was just a fun little project to try out matplotlib with some corona data from an API.
+This project was first built using `matplotlib`, but I then changed it over to `google-charts`.
 
 ### Preview
 
-![corona-graph](preview.png)
+![corona-graph](preview.gif)
 
 ### Install
 
 ```bash
-git clone "https://github.com/ViggoGaming/corona-graph.git"
-cd corona-graph
-pip install -r requirements.txt
+$ git clone "https://github.com/ViggoGaming/corona-graph.git"
+$ cd corona-graph
+$ pip install -r requirements.txt
 ```
 
 ### Usage
 
 ```bash
-python app.py
+$ python app.py
 ```
 
-To change the countries that are shown in the plot edit **line 6**.
+To see the application go to this url in your browser:
+```
+http://localhost:5000
+```
+
+To change the countries that are shown in the plot edit **line 9** in `app.py`.
 ```python
 #countries = ["Denmark", "Sweden", "Norway", "Finland", "Iceland"]
 countries = ["US", "Italy", "Spain"]
 ```
 
-To save the plot as a png uncomment this at **line 21**.
-```python
-#plt.savefig('graph.png')
-plt.savefig('graph.png')
-```
+# Contributing
+You are welcome to contribute to the project if you want to.
